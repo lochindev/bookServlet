@@ -12,7 +12,7 @@ public class Book extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         RequestDispatcher dispatcher = req.getRequestDispatcher("/hello.jsp");
-        req.setAttribute("name", "Lochinbek");
+        req.setAttribute("name", "Lochinbek dev");
         dispatcher.forward(req, resp);
 
     }
